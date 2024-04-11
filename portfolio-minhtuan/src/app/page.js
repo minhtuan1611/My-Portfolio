@@ -6,9 +6,11 @@ export default function Home() {
   return (
     <BaseLayout>
       <Container>
-        <h2>I'm an index page</h2>
-
-        <Button color="primary">Click Me</Button>
+        <Button color="danger">Danger</Button>
+        <div className="parent-class sibling-class">
+          <h1> Hi there student!</h1>
+          <div className="child-class"> Hello world</div>
+        </div>
       </Container>
     </BaseLayout>
   )
