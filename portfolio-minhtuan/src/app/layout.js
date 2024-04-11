@@ -1,6 +1,6 @@
 import BootstrapClient from '@/components/BootstrapClient.js'
 import 'bootstrap/dist/css/bootstrap.css'
-import './style/globals.scss'
+import './styles/globals.scss'
 
 export const metadata = {
   title: "Mtuan's Portfolio",
