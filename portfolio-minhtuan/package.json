@@ -16,6 +16,7 @@
     "react-dom": "^18",
     "reactstrap": "^9.2.2",
     "sass": "^1.74.1",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "react-typed": "^2.0.12"
   }
 }

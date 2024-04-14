@@ -30,9 +30,12 @@ const Header = () => {
         dark
         expand="md"
       >
-        <NavbarBrand href="/" className="port-navbar-brand">
-          Tuan Nguyen
-        </NavbarBrand>
+        <div>
+          <Link href="/" className="port-navbar-brand" passHref legacyBehavior>
+            <a className="nav-link port-navbar-link">Tuan Nguyen</a>
+          </Link>
+        </div>
+
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
