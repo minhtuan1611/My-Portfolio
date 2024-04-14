@@ -2,6 +2,12 @@
 
 @import './index';
 
+@import './components/header';
+
+.absolute {
+  position: absolute;
+}
+
 html,
 body {
   width: 100%;
