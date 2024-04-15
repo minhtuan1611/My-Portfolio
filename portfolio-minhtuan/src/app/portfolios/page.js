@@ -1,14 +1,22 @@
+'use client'
+import { useEffect, useState } from 'react'
 import BaseLayout from '../components/layouts/BaseLayout'
 import BasePage from '../components/BasePage'
 import React from 'react'
 import Link from 'next/link'
 
-const Portfolios = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
-    next: { revalidate: 10 },
-  })
-  const allPosts = await res.json()
-  const posts = allPosts.slice(0, 10)
+const Portfolios = () => {
+  const [posts, setPosts] = useState([])
+
+  useEffect(() => {
+    async function getPosts() {
+      const res = await fetch('/api/v1/posts')
+      const data = await res.json()
+      setPosts(data)
+    }
+
+    getPosts()
+  }, [])
 
   const renderPosts = () => {
     return posts.map((post) => (
