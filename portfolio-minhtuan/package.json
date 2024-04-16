@@ -14,9 +14,10 @@
     "next": "^14.2.1-canary.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-typed": "^2.0.12",
     "reactstrap": "^9.2.2",
     "sass": "^1.74.1",
     "styled-components": "^6.1.8",
-    "react-typed": "^2.0.12"
+    "swr": "^2.2.5"
   }
 }
