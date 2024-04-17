@@ -1,6 +1,7 @@
 import BootstrapClient from '@/components/BootstrapClient.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import './styles/globals.scss'
+import { UserProvider } from '@auth0/nextjs-auth0/client'
 
 export const metadata = {
   title: "Mtuan's Portfolio",
@@ -11,8 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
-        <BootstrapClient />
+        <UserProvider>
+          {children}
+          <BootstrapClient />
+        </UserProvider>
       </body>
     </html>
   )
