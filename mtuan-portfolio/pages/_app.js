@@ -1,5 +1,8 @@
-import "@/styles/globals.css";
+import React from 'react'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../styles/main.scss'
+
+const App = ({ Component, pageProps }) => <Component {...pageProps} />
+
+export default App

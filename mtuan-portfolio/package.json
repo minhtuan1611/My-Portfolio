@@ -9,8 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.1"
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "dotenv-webpack": "^8.1.0",
+    "next": "14.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-typed": "^2.0.12",
+    "reactstrap": "^9.2.2",
+    "sass": "^1.75.0",
+    "styled-components": "^6.1.8",
+    "swr": "^2.2.5"
   }
 }
