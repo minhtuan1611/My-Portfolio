@@ -3,7 +3,7 @@ import { handleLogout } from '@auth0/nextjs-auth0'
 export default async function logout(req, res) {
   try {
     await handleLogout(req, res, {
-      redirectAfterLogout: '/', // Redirect to your app's home page after logout
+      redirectAfterLogout: '/',
     })
   } catch (error) {
     console.error('Error during logout:', error)
