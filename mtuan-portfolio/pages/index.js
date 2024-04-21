@@ -14,9 +14,20 @@ const roles = [
 const Index = () => {
   const { user, isLoading } = useUser()
   if (isLoading) return <div>Loading...</div>
-  if (user) {
-    console.log(user)
-  }
+  // if (user) {
+  // console.log(user)
+  // const fetchRoles = async () => {
+  //   try {
+  //     const roles = (
+  //       await (await fetch(`/api/auth/roles?email=${user.name}`)).json()
+  //     )['https://portfolio-jerga.com/roles']
+  //     console.log(roles)
+  //   } catch (error) {
+  //     console.error('Error fetching roles:', error)
+  //   }
+  // }
+  // fetchRoles()
+  // }
 
   return (
     <BaseLayout user={user} loading={isLoading} className="cover">
