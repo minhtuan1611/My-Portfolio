@@ -16,14 +16,15 @@ export const authorizeUser = async (req, res) => {
 export const withAuth =
   (getData) =>
   async ({ req, res }) => {
-    const session = await getSession(req)
+    const session = await getSession(req, res)
 
     if (!session || !session.user) {
-      res.writeHead(302, {
-        Location: '/api/auth/login',
-      })
-      res.end()
-      return { props: {} }
+      return {
+        redirect: {
+          destination: '/api/auth/login',
+          permanent: false,
+        },
+      }
     }
 
     const data = getData ? await getData({ req, res }, session.user) : {}
