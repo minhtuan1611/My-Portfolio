@@ -5,7 +5,8 @@ export const isAuthorized = async (user, role) => {
   const response = await fetch(url)
   const data = await response.json()
   const userRoles = data['https://portfolio-jerga.com/roles']
-  console.log(userRoles.includes(role))
+  // console.log(typeof userRoles.includes(role))
+  // console.log(role, userRoles)
   return userRoles.includes(role)
 }
 
