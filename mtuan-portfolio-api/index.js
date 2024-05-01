@@ -1,10 +1,20 @@
 const express = require('express')
 const server = express()
+const mongoose = require('mongoose')
+require('dotenv').config()
 
 server.use('/api/v1/portfolios', require('./routes/portfolios'))
 
 const PORT = parseInt(process.env.PORT) || 3001
-server.listen(PORT, (err) => {
-  if (err) console.log(err)
-  console.log(`Server is running at port ${PORT}`)
-})
+
+mongoose
+  .connect(process.env.MONGO_URL, {})
+  .then(() => {
+    console.log('Connect to DB!')
+    server.listen(PORT, () => console.log(`Server Port: ${PORT}`))
+
+    /* ADD DATA ONE TIME */
+    // User.insertMany(users);
+    // Post.insertMany(posts);
+  })
+  .catch((error) => console.log(`${error} did not connect`))
