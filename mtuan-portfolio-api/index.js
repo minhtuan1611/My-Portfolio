@@ -10,7 +10,7 @@ const PORT = parseInt(process.env.PORT) || 3001
 mongoose
   .connect(process.env.MONGO_URL, {})
   .then(() => {
-    console.log('Connect to DB!')
+    console.log('Connect to MongoDB!')
     server.listen(PORT, () => console.log(`Server Port: ${PORT}`))
 
     /* ADD DATA ONE TIME */
