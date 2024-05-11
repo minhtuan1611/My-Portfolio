@@ -13,7 +13,7 @@ mongoose
     console.log('Connect to MongoDB!')
     server.listen(PORT, () => console.log(`Server Port: ${PORT}`))
 
-    /* ADD DATA ONE TIME */
+    /* ADD DATA ONE TIME */ f
     // User.insertMany(users);
     // Post.insertMany(posts);
   })
