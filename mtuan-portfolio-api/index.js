@@ -12,5 +12,6 @@ mongoose
   .then(() => {
     console.log('Connect to MongoDB!')
     server.listen(PORT, () => console.log(`Server Port: ${PORT}`))
+    // everything okay now ?
   })
   .catch((error) => console.log(`${error} did not connect`))
