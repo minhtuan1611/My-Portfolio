@@ -1,4 +1,3 @@
-
 @import './shared/fonts';
 
 // Components
@@ -6,8 +5,10 @@
 
 // Pages
 @import './index';
+@import './portfolios';
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: 'Montserrat', 'Helvetica' !important;
@@ -19,7 +20,15 @@ html, body {
 
 .base-page {
   padding-top: 150px;
-  color: white;
+  color: black;
+  background-color: #ecedee;
+  min-height: 100vh;
+
+  .page-header-title {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 }
 
 .absolute {
