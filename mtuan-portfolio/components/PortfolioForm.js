@@ -33,7 +33,7 @@ const PortfolioForm = ({ onSubmit }) => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="company">Company</label>
+        <label htmlFor="company">Companyy</label>
         <input
           {...register('company')}
           name="company"
