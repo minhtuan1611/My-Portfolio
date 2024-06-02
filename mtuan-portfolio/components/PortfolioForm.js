@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import DatePicker from 'react-datepicker'
 import { useForm } from 'react-hook-form'
 import 'react-datepicker/dist/react-datepicker.css'
@@ -27,16 +27,15 @@ const PortfolioForm = ({ onSubmit }) => {
           {...register('title')}
           name="title"
           type="text"
-          className="ßßform-control"
+          className="form-control"
           id="title"
         />
       </div>
 
       <div className="form-group">
-        <label htmlFor="company">Companyy</label>
+        <label htmlFor="company">Company</label>
         <input
           {...register('company')}
-          ß
           name="company"
           type="text"
           className="form-control"

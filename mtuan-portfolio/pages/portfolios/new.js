@@ -5,16 +5,13 @@ import { Row, Col } from 'reactstrap'
 import PortfolioForm from '@/components/PortfolioForm'
 
 const PortfolioNew = ({ user, loading: userLoading }) => {
-  const createPortfolio = (data) => {
-    alert(JSON.stringify(data))
-  }
-
+  const _createPortfolio = (data) => {}
   return (
     <BaseLayout user={user} loading={userLoading}>
       <BasePage header="Create Portfolio">
         <Row>
           <Col md="8">
-            <PortfolioForm onSubmit={createPortfolio} />
+            <PortfolioForm onSubmit={_createPortfolio} />
           </Col>
         </Row>
       </BasePage>
