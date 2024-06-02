@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const { checkJwt } = require('../controllers/auth')
 const {
   getPortfolios,
   getPortfolioById,

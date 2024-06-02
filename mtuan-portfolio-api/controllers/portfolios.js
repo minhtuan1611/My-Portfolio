@@ -17,7 +17,6 @@ exports.getPortfolioById = async (req, res) => {
 
 exports.createPortfolio = async (req, res) => {
   const portfolioData = req.body
-  // Todo: Exctract from req!
   const userId = 'google-oauth2|106322693209926200762'
   const portfolio = new Portfolio(portfolioData)
   portfolio.userId = userId
